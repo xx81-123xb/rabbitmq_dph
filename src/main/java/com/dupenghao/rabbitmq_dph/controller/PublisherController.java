@@ -39,7 +39,7 @@ public class PublisherController implements ApplicationContextAware {
         String routingKey = sendParam.getRoutingKey();
         String exchange = sendParam.getExchange();
         rabbitTemplate.convertAndSend(exchange,routingKey,message);
-        rabbitTemplate.convertAndSend(exchange,"dph.direct.routingKey","默认消息");
+//        rabbitTemplate.convertAndSend(exchange,"dph.direct.routingKey","默认消息");
         return Result.success(null);
     }
 

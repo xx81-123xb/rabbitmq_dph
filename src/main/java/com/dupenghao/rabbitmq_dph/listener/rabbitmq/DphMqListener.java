@@ -20,4 +20,14 @@ public class DphMqListener {
         log.info("direct接收到消息："+message);
     }
 
+    @RabbitListener(queues = {"dph.topic.queue1"})
+    public void receive3(String message){
+        log.info("topic1接收到消息："+message);
+    }
+
+    @RabbitListener(queues = {"dph.topic.queue2"})
+    public void receive4(String message){
+        log.info("topic2接收到消息："+message);
+    }
+
 }
