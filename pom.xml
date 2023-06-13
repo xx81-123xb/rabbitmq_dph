@@ -16,6 +16,20 @@
     <properties>
         <java.version>8</java.version>
     </properties>
+
+
+    <repositories>
+        <repository>
+            <id>mvn-repo</id>
+            <!-- https://raw.github.com/用户名/仓库名/分支名 -->
+            <url>https://github.com/xx81-123xb/mvn-repo/master</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
