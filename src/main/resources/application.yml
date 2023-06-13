@@ -7,3 +7,8 @@ spring:
     password: admin
 server:
   port: 8080
+
+knife4j:
+  autoEnable: true
+  basePackage: com.dupenghao.rabbitmq_dph.controller
+  title: RabbitMQ WebApiDoc

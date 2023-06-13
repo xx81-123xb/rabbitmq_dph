@@ -22,27 +22,27 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 @EnableWebMvc
 public class SwaggerConfiguration implements WebMvcConfigurer {
 
-    @Bean
-    public Docket apiDocket() {
-        Docket docket = new Docket(DocumentationType.SWAGGER_2);
-        docket.apiInfo(apiInfo())
-                .groupName("webApi")
-                .select()
-                .apis(RequestHandlerSelectors.withClassAnnotation(RestController.class))
-//                .apis(RequestHandlerSelectors.basePackage("com.dupenghao.rabbitmq_dph.controller"))
-                .build();
-        return docket;
-    }
-
-    public ApiInfo apiInfo() {
-        ApiInfo apiInfo = new ApiInfoBuilder()
-                .title("RabbitMq 学习")
-                .description("测试")
-                .version("1.0")
-                .contact(new Contact("杜鹏豪", "www.dupenghao.com", "xb8023xx@gmail.com"))
-                .build();
-        return apiInfo;
-    }
+//    @Bean
+//    public Docket apiDocket() {
+//        Docket docket = new Docket(DocumentationType.SWAGGER_2);
+//        docket.apiInfo(apiInfo())
+//                .groupName("webApi")
+//                .select()
+//                .apis(RequestHandlerSelectors.withClassAnnotation(RestController.class))
+////                .apis(RequestHandlerSelectors.basePackage("com.dupenghao.rabbitmq_dph.controller"))
+//                .build();
+//        return docket;
+//    }
+//
+//    public ApiInfo apiInfo() {
+//        ApiInfo apiInfo = new ApiInfoBuilder()
+//                .title("RabbitMq 学习")
+//                .description("测试")
+//                .version("1.0")
+//                .contact(new Contact("杜鹏豪", "www.dupenghao.com", "xb8023xx@gmail.com"))
+//                .build();
+//        return apiInfo;
+//    }
 
     // 解决swagger-ui.html 404报错
     @Override

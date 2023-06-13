@@ -1,6 +1,6 @@
 package com.dupenghao.rabbitmq_dph.controller;
 
-import com.dupenghao.conmmon.Result;
+import com.dupenghao.conmmon.entity.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.Data;
